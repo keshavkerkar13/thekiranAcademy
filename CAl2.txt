@@ -1,0 +1,56 @@
+2.Calculator has price and company name.Calculator has many operations(i.e ADD,SUB,MUL,DIV) which has two numbers from user & display addition on screen / console  
+
+
+
+
+		class calcu {
+
+ 			int price = 700;
+			String Cname = "casio";
+			
+			void addTwo(int a , int b)  {
+				 int c = a+b;
+			System.out.println("add="+int c);
+				}
+
+			void subTwo(int b , int a) {
+				int c = b-a;
+			System.out.println("sub="+ int c);
+				}
+
+			void mulTwo(int a , int b) {
+				int c = a*b;
+			System.out.println("mul="+ int c);
+				}
+
+			void divTwo(int a , int b){
+				int c = a/b;
+			System.out.println("div="+c);
+				}
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[
