@@ -1,0 +1,12 @@
+Calculator has price and company name.Calculator has oe feature/operation which has two numbers from user & display addition on screen / console 
+
+
+    	    Class calculator  {
+		int price=700;
+		String Cname="casio";
+		
+		void addTwo(int a,int b) {
+			int c= a+b;
+		System.out.println("addition="=int c);
+					}	
+				}
