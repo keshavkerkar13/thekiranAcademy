@@ -1,8 +1,6 @@
 2.Calculator has price and company name.Calculator has many operations(i.e ADD,SUB,MUL,DIV) which has two numbers from user & display addition on screen / console  
 
 
-
-
 		class calcu {
 
  			int price = 700;
