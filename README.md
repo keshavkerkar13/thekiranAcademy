@@ -1,5 +1,3 @@
-# thekiranAcademy
-
 class GitHub {
  String username;
  int repositories;
