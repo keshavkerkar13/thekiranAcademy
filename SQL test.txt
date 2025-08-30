@@ -1,0 +1,105 @@
+
+Name : KESHAV DEVENDRA KERKAR 
+Batch: 1271 
+
+
+
+1. Which of the following is a DDL command? 
+Ans: c) CREATE.
+
+2. Which keyword is used to rename a table in SQL? 
+Ans: b) RENAME.
+
+3. Which of these clauses is used to filter rows after grouping? 
+Ans: b) HAVING 
+
+4. DELETE FROM Employees; will: 
+Ans: b) Remove only rows but keep structure.
+
+
+5. Which SQL function returns the number of rows? 
+Ans: a) COUNT().
+
+6.In SQL, the default order of ORDER BY is: 
+Ans: a) Ascending 
+
+7. Which command is used to modify a column’s datatype in a table? 
+Ans: b) ALTER  
+
+8.Which of the following is not an aggregate function? 
+Ans: c) ROUND() 
+
+9. Which clause is used to limit the number of records retrieved? 
+Ans: c) LIMIT  
+
+10. Which of the following correctly finds unique departments? 
+Ans: a) SELECT DISTINCT department FROM Employees; 
+
+
+
+SECTION B
+
++--------+----------+------------+--------+-------------------+
+| emp_id | emp_name | department | salary | hire_date  |
++--------+----------+------------+--------+-------------------+
+|    101 |             Amit              Sales         45000| 2004-01-01|
+|    102 |            Neha           HR             55000 | 2019-03-20|
+|    103 |            Rahul             IT             60000| 2021-07-11 |
+|    105 |            Priya              Sales        52920 | 2018-11-05 |
+|    106 |           Anjali             HR           50000 | 2021-08-17|
+|    107 |            Rohan           Sales        51818  | 2022-04-10|
+|    108 |            Meena      Finance       65000 | 2023-01-15 |
++--------+----------+------------+--------+-------------------+
+
+
+   
+1. CREATE TABLE employees (emp_id INT,emp_name VARCHAR(50),department VARCHAR(50),salary DECIMAL(10,2),hire_date DATE);
+
+2.INSERT INTO employees (emp_id, emp_name, department, salary, hire_date)  VALUES (108, 'Meena', 'Finance', 65000, '2023-01-15');
+
+3. UPDATE employees SET salary = salary * 1.05 WHERE department = 'Sales';
+
+4. DELETE FROM employees WHERE emp_id = 104;
+
+5. SELECT emp_name, salary FROM employees;
+
+6. SELECT * FROM employees WHERE department = 'IT';
+
+7. SELECT * FROM employees WHERE salary > 50000;
+
+8. SELECT * FROM employees WHERE hire_date > '2020-01-01';
+
+9. SELECT * FROM employees ORDER BY salary ASC;
+
+10. SELECT * FROM employees ORDER BY hire_date DESC;
+
+11. SELECT COUNT(*) AS total_employees FROM employees;
+
+12. SELECT MAX(salary) AS max_salary FROM employees;
+
+13. SELECT MIN(salary) AS min_salary FROM employees;
+
+14. SELECT AVG(salary) AS avg_salary FROM employees;
+
+15. SELECT department, COUNT(*) AS total_employees FROM employees GROUP BY department;
+
+16. SELECT department, SUM(salary) AS total_salary FROM employees GROUP BY department;
+
+17. SELECT department, AVG(salary) AS avg_salary FROM employees GROUP BY department;
+
+18. SELECT department, COUNT(*) AS total_employees FROM employees GROUP BY department HAVING COUNT(*) > 2;
+
+19. SELECT department, AVG(salary) AS avg_salary FROM employees GROUP BY department HAVING AVG(salary) > 55000;
+
+20. SELECT * FROM employees ORDER BY salary DESC LIMIT 3;
+
+21. SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+
+22. SELECT DISTINCT department FROM employees;
+
+23. SELECT * FROM employees WHERE emp_name LIKE 'A%';
+
+24. SELECT * FROM employees WHERE emp_name LIKE '%a';
+
+25. SELECT * FROM employees WHERE department <> 'HR';
+
