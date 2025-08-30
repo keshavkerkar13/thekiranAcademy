@@ -40,15 +40,15 @@ Ans: a) SELECT DISTINCT department FROM Employees;
 SECTION B
 
 +--------+----------+------------+--------+-------------------+
-| emp_id | emp_name | department | salary | hire_date  |
+| emp_id | emp_name | department | salary | hire_date |
 +--------+----------+------------+--------+-------------------+
-|    101 |             Amit              Sales         45000| 2004-01-01|
-|    102 |            Neha           HR             55000 | 2019-03-20|
-|    103 |            Rahul             IT             60000| 2021-07-11 |
-|    105 |            Priya              Sales        52920 | 2018-11-05 |
-|    106 |           Anjali             HR           50000 | 2021-08-17|
-|    107 |            Rohan           Sales        51818  | 2022-04-10|
-|    108 |            Meena      Finance       65000 | 2023-01-15 |
+|    101      Amit       Sales       45000| 2004-01-01|
+|    102      Neha       HR          55000| 2019-03-20|
+|    103      Rahul      IT          60000| 2021-07-11|
+|    105      Priya      Sales       52920| 2018-11-05|
+|    106      Anjali     HR          50000| 2021-08-17|
+|    107      Rohan      Sales       51818| 2022-04-10|
+|    108      Meena      Finance     65000| 2023-01-15|
 +--------+----------+------------+--------+-------------------+
 
 
@@ -102,4 +102,5 @@ SECTION B
 24. SELECT * FROM employees WHERE emp_name LIKE '%a';
 
 25. SELECT * FROM employees WHERE department <> 'HR';
+
 
